@@ -21,3 +21,10 @@ def load_data(filename):
         data = json.load(file)
     
     return data
+
+def load_template(filename):
+    filepath = "templates/"+filename
+    with open(filepath, 'r') as file:
+        content = file.read()
+    return content
+
