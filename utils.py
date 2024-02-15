@@ -13,3 +13,11 @@ def read_file(file_path: Path) -> bytes:
     with open(file_path, 'rb') as file:
         content = file.read()
     return content
+
+def load_data(filename):
+    filepath = "data/"+ filename
+    
+    with open(filepath, 'r') as file:
+        data = json.load(file)
+    
+    return data
